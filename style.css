@@ -1,0 +1,194 @@
+/* ===== RESET BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== VARIÁVEIS DE COR ===== */
+:root {
+    --rosa-principal: #e83e8c;
+    --rosa-escuro: #c2185b;
+    --rosa-claro: #f8d7e6;
+    --rosa-suave: #fff0f6;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 70px; /* Compensa navbar fixa */
+    background-color: var(--rosa-suave);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: var(--rosa-principal) !important;
+}
+
+.navbar-brand span {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ffe3ef !important;
+}
+
+/* ===== HERO ===== */
+#inicio {
+    position: relative;
+}
+
+#inicio::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(232, 62, 140, 0.55);
+}
+
+#inicio .container {
+    position: relative;
+    z-index: 1;
+}
+
+#inicio h1,
+#inicio p {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== BOTÕES ===== */
+.btn-danger,
+.btn-outline-danger {
+    background-color: var(--rosa-principal);
+    border-color: var(--rosa-principal);
+}
+
+.btn-danger:hover,
+.btn-outline-danger:hover {
+    background-color: var(--rosa-escuro);
+    border-color: var(--rosa-escuro);
+}
+
+.btn-warning {
+    background-color: #ffb6d9;
+    border: none;
+    color: #5a0032;
+}
+
+.btn-warning:hover {
+    background-color: #ffa3cd;
+}
+
+/* ===== SOBRE NÓS ===== */
+#sobrenos h2 {
+    color: var(--rosa-principal) !important;
+}
+
+#sobrenos p {
+    text-align: justify;
+}
+
+/* ===== CARDÁPIO ===== */
+#cardapio h2 {
+    color: var(--rosa-principal);
+}
+
+.carousel img {
+    border-radius: 12px;
+}
+
+/* ===== TABELA ===== */
+.table-danger {
+    background-color: var(--rosa-principal) !important;
+    color: #fff;
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--rosa-claro);
+}
+
+.badge.bg-success {
+    background-color: #ff69b4 !important;
+}
+
+/* ===== CONTATO ===== */
+#contato h4 {
+    color: var(--rosa-principal);
+}
+
+#contato a {
+    color: var(--rosa-escuro);
+}
+
+#contato a:hover {
+    color: var(--rosa-principal);
+}
+
+/* ===== ÍCONES ===== */
+.fa-instagram,
+.fa-linkedin,
+.fa-facebook {
+    transition: transform 0.3s, color 0.3s;
+}
+
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-facebook:hover {
+    transform: scale(1.2);
+    color: var(--rosa-escuro) !important;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--rosa-principal) !important;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+
+    #inicio {
+        height: 70vh !important;
+        padding: 20px;
+    }
+
+    #inicio h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-brand span {
+        font-size: 1.1rem;
+    }
+
+    .carousel img {
+        height: 250px !important;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #inicio h1 {
+        font-size: 1.7rem;
+    }
+
+    #inicio p {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
